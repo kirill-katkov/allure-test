@@ -18,8 +18,8 @@ public class AnnotatedStepTest {
     @Test
     @DisplayName("Успешный тест с аннотацией @Step")
     public void testGithubIssue() {
-        //Allure.parameter("Name", "Kirill Katkov");
-        SelenideLogger.addListener("allure", new AllureSelenide());
+        Allure.parameter("Name", "Kirill Katkov");
+        //SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps steps = new WebSteps();
 
         steps.openMainPage();
